@@ -1,0 +1,388 @@
+/*
+ * Tomris arayüzü için koyu lacivert/siyah tema.
+ * Renk paleti kürenin camgöbeği (cyan) tonlarıyla uyumlu tutulmuştur.
+ */
+
+.root-background {
+    -fx-background-color: linear-gradient(to bottom, #04050c, #080b15 55%, #04060d);
+}
+
+.top-bar {
+    -fx-background-color: transparent;
+}
+
+.title-label {
+    -fx-font-family: "Segoe UI Semibold", "Segoe UI", sans-serif;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #e6feff;
+    -fx-effect: dropshadow(gaussian, #22d3ee, 18, 0.45, 0, 0);
+}
+
+.clock-label {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 18px;
+    -fx-text-fill: #7cfbff;
+    -fx-opacity: 0.85;
+}
+
+.bottom-bar {
+    -fx-background-color: transparent;
+}
+
+.status-label {
+    -fx-text-fill: #4fd8e8;
+    -fx-font-size: 11.5px;
+    -fx-opacity: 0.8;
+    -fx-padding: 0 4 0 4;
+}
+
+.mic-button {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-background-radius: 50%;
+    -fx-border-color: rgba(34, 211, 238, 0.35);
+    -fx-border-radius: 50%;
+    -fx-border-width: 1;
+    -fx-text-fill: #cdfcff;
+    -fx-font-size: 14px;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -fx-cursor: hand;
+}
+
+.mic-button:hover {
+    -fx-border-color: #22d3ee;
+}
+
+.mic-button.mic-active {
+    -fx-background-color: rgba(192, 132, 252, 0.25);
+    -fx-border-color: #c084fc;
+    -fx-effect: dropshadow(gaussian, #c084fc, 12, 0.55, 0, 0);
+}
+
+.mic-button:disabled {
+    -fx-opacity: 0.4;
+    -fx-cursor: default;
+}
+
+/* ---- Hava durumu kartı ---- */
+
+.weather-card {
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-background-radius: 18;
+    -fx-border-color: rgba(129, 140, 248, 0.22);
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+}
+
+.weather-time {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 15px;
+    -fx-text-fill: #eafeff;
+    -fx-font-weight: bold;
+}
+
+.weather-date {
+    -fx-font-size: 12px;
+    -fx-text-fill: #9fb4bd;
+}
+
+.weather-separator {
+    -fx-text-fill: #4b6b76;
+}
+
+.weather-location {
+    -fx-font-size: 13px;
+    -fx-text-fill: #c084fc;
+    -fx-font-weight: bold;
+}
+
+.weather-current {
+    -fx-font-size: 20px;
+    -fx-text-fill: #eafeff;
+    -fx-font-weight: bold;
+}
+
+.weather-forecast-row {
+    -fx-padding: 8 0 0 0;
+}
+
+.weather-day-tile {
+    -fx-background-color: rgba(129, 140, 248, 0.08);
+    -fx-background-radius: 10;
+    -fx-padding: 6 4 6 4;
+    -fx-min-width: 44px;
+}
+
+.weather-day-name {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #8af7ff;
+    -fx-font-weight: bold;
+}
+
+.weather-day-condition {
+    -fx-font-size: 10px;
+    -fx-text-fill: #9fb4bd;
+}
+
+.weather-day-temp {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #eafeff;
+}
+
+/* ---- Uygulama kısayolları ---- */
+
+.app-shortcuts-heading {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6b8894;
+    -fx-font-weight: bold;
+}
+
+.app-tile {
+    -fx-background-color: rgba(255, 255, 255, 0.04);
+    -fx-background-radius: 14;
+    -fx-border-color: rgba(34, 211, 238, 0.25);
+    -fx-border-radius: 14;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+    -fx-min-width: 78px;
+}
+
+.app-tile:hover {
+    -fx-border-color: #22d3ee;
+    -fx-background-color: rgba(34, 211, 238, 0.08);
+}
+
+.app-tile-glyph {
+    -fx-font-size: 20px;
+}
+
+.app-tile-name {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #cdfcff;
+}
+
+/* ---- Ortak kart temeli (dashboard kartları) ---- */
+
+.status-card, .greeting-card, .motivation-card, .plan-card, .calendar-card, .music-card {
+    -fx-background-color: rgba(255, 255, 255, 0.03);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(129, 140, 248, 0.20);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+}
+
+.card-heading {
+    -fx-font-size: 11px;
+    -fx-text-fill: #6b8894;
+    -fx-font-weight: bold;
+}
+
+/* ---- Sistem durumu ---- */
+
+.status-tile {
+    -fx-background-color: rgba(34, 211, 238, 0.06);
+    -fx-background-radius: 10;
+    -fx-padding: 6 8 6 8;
+    -fx-min-width: 46px;
+}
+
+.status-glyph {
+    -fx-font-size: 13px;
+    -fx-text-fill: #8af7ff;
+}
+
+.status-value {
+    -fx-font-size: 14px;
+    -fx-text-fill: #eafeff;
+    -fx-font-weight: bold;
+}
+
+.status-name {
+    -fx-font-size: 8.5px;
+    -fx-text-fill: #6b8894;
+}
+
+/* ---- Selam kartı ---- */
+
+.greeting-title {
+    -fx-font-size: 16px;
+    -fx-text-fill: #eafeff;
+    -fx-font-weight: bold;
+}
+
+.greeting-subtitle {
+    -fx-font-size: 12px;
+    -fx-text-fill: #9fb4bd;
+}
+
+.greeting-tag {
+    -fx-font-size: 10px;
+    -fx-text-fill: #c084fc;
+    -fx-background-color: rgba(192, 132, 252, 0.12);
+    -fx-background-radius: 8;
+    -fx-padding: 3 8 3 8;
+}
+
+/* ---- Motivasyon kartı ---- */
+
+.motivation-quote {
+    -fx-font-size: 12.5px;
+    -fx-text-fill: #c9f9ff;
+    -fx-font-style: italic;
+}
+
+/* ---- Bugünkü planın ---- */
+
+.plan-loading, .plan-empty {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #6b8894;
+    -fx-font-style: italic;
+}
+
+.plan-time {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #8af7ff;
+}
+
+.plan-title {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #eafeff;
+}
+
+.plan-checkbox .box {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: rgba(34, 211, 238, 0.4);
+}
+
+/* ---- Takvim ---- */
+
+.calendar-nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8af7ff;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 0 6 0 6;
+}
+
+.calendar-nav-button:hover {
+    -fx-text-fill: #22d3ee;
+}
+
+.calendar-month-label {
+    -fx-font-size: 11.5px;
+    -fx-text-fill: #eafeff;
+    -fx-font-weight: bold;
+}
+
+.calendar-day-header {
+    -fx-font-size: 9px;
+    -fx-text-fill: #6b8894;
+    -fx-min-width: 22px;
+    -fx-alignment: center;
+}
+
+.calendar-day-cell {
+    -fx-font-size: 10.5px;
+    -fx-text-fill: #c9f9ff;
+    -fx-min-width: 22px;
+    -fx-alignment: center;
+    -fx-padding: 3;
+}
+
+.calendar-day-today {
+    -fx-background-color: #22d3ee;
+    -fx-background-radius: 50%;
+    -fx-text-fill: #04141a;
+    -fx-font-weight: bold;
+}
+
+/* ---- Müzik çalar ---- */
+
+.music-card {
+    -fx-min-width: 240px;
+    -fx-max-width: 260px;
+}
+
+.music-state-glyph {
+    -fx-font-size: 18px;
+    -fx-text-fill: #c084fc;
+}
+
+.music-track {
+    -fx-font-size: 12.5px;
+    -fx-text-fill: #eafeff;
+    -fx-font-weight: bold;
+}
+
+.music-artist {
+    -fx-font-size: 11px;
+    -fx-text-fill: #9fb4bd;
+}
+
+.music-refresh-button {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(192, 132, 252, 0.3);
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-text-fill: #c084fc;
+    -fx-font-size: 10.5px;
+    -fx-padding: 4 10 4 10;
+    -fx-cursor: hand;
+}
+
+.music-refresh-button:hover {
+    -fx-border-color: #c084fc;
+    -fx-background-color: rgba(192, 132, 252, 0.08);
+}
+
+/* ---- Yapışkan not ---- */
+
+.sticky-note-card {
+    -fx-background-color: rgba(250, 204, 21, 0.06);
+    -fx-background-radius: 16;
+    -fx-border-color: rgba(250, 204, 21, 0.30);
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+}
+
+.sticky-note-heading {
+    -fx-font-size: 11px;
+    -fx-text-fill: #eab308;
+    -fx-font-weight: bold;
+}
+
+.sticky-note-area {
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+    -fx-prompt-text-fill: rgba(250, 204, 21, 0.4);
+}
+
+.sticky-note-area .content {
+    -fx-background-color: rgba(250, 204, 21, 0.05);
+    -fx-background-radius: 10;
+}
+
+.sticky-note-area .text {
+    -fx-fill: #fde68a;
+}
+
+/* ---- Alt söz çubuğu ---- */
+
+.tagline-bar {
+    -fx-padding: 4 0 4 0;
+}
+
+.tagline-text {
+    -fx-font-size: 12px;
+    -fx-font-style: italic;
+    -fx-text-fill: #7fa3ad;
+}
+
+.tagline-heart {
+    -fx-font-size: 12px;
+    -fx-text-fill: #c084fc;
+}
